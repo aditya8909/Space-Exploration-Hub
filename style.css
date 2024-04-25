@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+p,a,li,h1,h3,h6{
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ul{
+    display: flex;
+    justify-content: space-around;
+} */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-size: small;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.animation{
+    border: none;
+    /* height: 500px;
+    width: 500px; */
+    /* padding-top: 2px; */
+
+}
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    padding-right: 10px;
+}
+/* .button{
+/* background-color: blue; */
+/* width: fit-content;
+height:25px;
+border-width: 2px;
+border-color: blue; */
+/* background-color: blue; */
+/* border-radius:10px ; */
+
+/* } */
+/* a{ */
+/* padding: 5px,5px,5px,5x; */
+/* display: flex; */
+/* align-items:; */
+/* }  */
+
+
+/* --------------------------------------------------------------------------button-------------------------------------------------------------------------- */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+  }
+  
+  .button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  .cards{
+    display: flex;
+    justify-content: space-around;
+  }
+  .card{
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-right: 100px;
+  }
+  footer{
+    /* background-color: white; */
+    margin-left: -30;
+  }
+  .credit{
+    text-align: right;
+    font-size: 10px;
+    /* color: black; */
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  body{
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: visible;
+ font-size: 50%;
+  }
+  .button{
+    /* width: 80px; */
+    padding:3px 3px 3px 3px;
+    /* height: 80px; */
+    /* display: none; */
+
+    font-size: 80%;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .animation{
+    width: 50%;
+    height: 50%;
+  }
+nav{
+flex-direction: column;
+}
+.logo iframe{
+    width: 100px;
+    height: 100px;
+}
+.logo{
+    flex-direction: column;
+}
+.cards{
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card{
+    margin-right: 0px;
+    margin-left: 10%;
+}
+img{
+    /* width: 50px; */
+    /* height: 50px; */
+}
+
+}
+
+
+  
